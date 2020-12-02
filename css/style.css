@@ -1,13 +1,5 @@
-/**
- * Add your custom styles below
- * 
- * Remember: 
- * - Be organised, use comments and separate your styles into meaningful chunks
- *    for example: General styles, Navigation styles, Hero styles, Footer etc.
- * 
- */
-/* General Styles */
 
+/* General Styles */
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -54,7 +46,7 @@ nav a:hover {
 /* Main Content Styles*/
 
 main {
-    height: 1500px;
+   
     display: block;
     margin-bottom: 30px;
 }
@@ -78,12 +70,24 @@ article img {
 
 article p {
     line-height: 1.5;
+    margin-bottom: 35px;
 }
 
 .article_part2, .article_part3 {
     padding-top: 30px;
 }
 
+/* first-child styles for article to stand out */
+article:first-child:hover img {
+    transform: scale(1.1);
+    transition: 1s ease-in-out;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);   
+}
+
+article:first-child img {
+    border: 10px solid rgb(9, 224, 73);
+    border-radius: 30px;
+}
 
 /* Footer Styles */
 
@@ -95,5 +99,13 @@ article p {
     padding-top: 15px;
     margin-top: 55px;
     background-color: rgb(218, 14, 218);
+}
+
+.footer_container h2 {
+    font-weight: 400;
+}
+
+.copyright {
+    font-size: small;
 }
 
